@@ -1,0 +1,1 @@
+This bug occurs when using the Expo DocumentPicker API on Android.  The issue is that the selected file's URI is not always correctly returned, leading to errors when attempting to access the file's contents.  Specifically, the URI sometimes contains an extra `file:///` prefix, causing the `RNFS.readFile` function to fail.
